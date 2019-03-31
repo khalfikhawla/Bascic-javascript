@@ -1,12 +1,23 @@
 function myFunction_bold() {
-    document.getElementById("f").style.fontWeight = "bold";
+if(document.getElementById("f").style.fontWeight == "bold"){
+  document.getElementById("f").style.fontWeight = ""; 
+}  else document.getElementById("f").style.fontWeight = "bold" ;
   }
+
+
+
   function myFunction_italic() {
-    document.getElementById("f").style.fontStyle = "italic";
-  }
+    if( document.getElementById("f").style.fontStyle == "italic"){
+      document.getElementById("f").style.fontStyle = ""; 
+  } else  document.getElementById("f").style.fontStyle = "italic";
+}
+
+
   function myFunction_underlined() {
-    document.getElementById("f").style.textDecoration = "underline";
-  }
+    if(  document.getElementById("f").style.textDecoration == "underline"){
+      document.getElementById("f").style.textDecoration ="";  
+  }else  document.getElementById("f").style.textDecoration = "underline";
+}
   
  
   function myFunction1(selectTag) {
